@@ -5,5 +5,6 @@
 </head>
 <body>
     <%= "Hello World" %>
+    <p>For a start, visit <a href="tutorial.jsp">tutorial</a></p>
 </body>
 </html>

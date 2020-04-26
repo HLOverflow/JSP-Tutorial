@@ -58,5 +58,27 @@
 
     </div>
 
+
+    <div>
+    <h1>Import other Java classes</h1>
+    <p>Within an ArrayList</p>
+    <ul>
+    <%@ page import="java.util.ArrayList" %>
+    <% 
+    
+    	ArrayList<String> alist = new ArrayList<String>();
+	alist.add("apple");
+	alist.add("pear");
+	alist.add("orange");
+	
+	for (String fruit : alist){
+    %>
+	<li><%= fruit %></li>
+    <% } %>
+    </ul>
+    </div>
+
+    <p>For importing custom classes. Look at <a href="tutorial2.jsp">tutorial2</a></p>
+
 </body>
 </html>
