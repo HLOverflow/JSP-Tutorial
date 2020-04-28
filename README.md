@@ -57,4 +57,13 @@ To copy file onto the container: `docker container cp ./src/ROOT/tutorial.jsp <C
 # docker container cp ./src/ROOT/tutorial.jsp 456fda983192:/usr/local/tomcat/webapps/ROOT
 ```
 
+# Compilation of java source code with compatible javac version
+
+Ever get frustrated in finding the correct javac compiler version because current javac compiler is too new?
+Here is a nice little trick to make use of onboard's javac to compile source codes. 
+
+```
+# docker container run -v $(pwd):/mnt -w /mnt tomcat-jsp-tutorial javac <SOURCE.java>
+```
+
 
