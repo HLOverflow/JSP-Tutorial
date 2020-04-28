@@ -63,7 +63,7 @@ Ever get frustrated in finding the correct javac compiler version because curren
 Here is a nice little trick to make use of onboard's javac to compile source codes. 
 
 ```
-# docker container run -v $(pwd):/mnt -w /mnt tomcat-jsp-tutorial javac <SOURCE.java>
+# docker container run --rm -v $(pwd):/mnt -w /mnt tomcat-jsp-tutorial javac <SOURCE.java>
 ```
 
 
