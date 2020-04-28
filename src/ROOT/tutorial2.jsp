@@ -25,5 +25,8 @@
     <p>Person says "<%= p.introduce() %>"</p>
     </div>
 
+
+    <p>For importing custom classes via Jar files. Look at <a href="tutorial3.jsp">tutorial3</a></p>
+
 </body>
 </html>

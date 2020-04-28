@@ -1,20 +1,20 @@
-package custompackage;
+package examplejarpackage;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileIo{
+public class MyFileIo{
 
 	public static void main(String [] args){
-		FileIo obj = new FileIo();
+		MyFileIo obj = new MyFileIo();
 		obj.writeToFile("hi");
 	}
 
 	public void writeToFile(String input){
 
 		try {
-			FileWriter myWriter = new FileWriter("filename.txt");
+			FileWriter myWriter = new FileWriter("webapps/ROOT/filename.txt");
 			myWriter.write(input);
 			myWriter.close();
 			System.out.println("Successfully wrote to the file.");
